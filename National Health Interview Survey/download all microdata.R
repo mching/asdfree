@@ -37,7 +37,7 @@ download.documentation <- TRUE
 # use forward slashes instead of back slashes
 
 # uncomment this line by removing the `#` at the front..
-# setwd( "C:/My Directory/NHIS/" )
+setwd( "./Dropbox/Mike/NHIS_CAM" )
 # ..in order to set your current working directory
 
 
@@ -47,13 +47,13 @@ if ( .Platform$OS.type != 'windows' ) print( 'non-windows users: read this block
 # scripts in a non-standard format
 # if so, before running this whole download program,
 # you might need to run this line..
-# options( encoding="windows-1252" )
+options( encoding="windows-1252" )
 # ..to turn on windows-style encoding.
 # # # end of non-windows system edits.
 
 
 # remove the # in order to run this install.packages line only once
-# install.packages( c( "SAScii" , "RCurl" , "downloader" , "digest" ) )
+install.packages( c( "SAScii" , "RCurl" , "downloader" , "digest" ) )
 
 
 # define which years to download #
@@ -63,7 +63,7 @@ if ( .Platform$OS.type != 'windows' ) print( 'non-windows users: read this block
 # nhis.years.to.download <- 2015:1963
 
 # uncomment this line to only download the 2012 files
-# nhis.years.to.download <- 2012
+nhis.years.to.download <- 2012
 
 # uncomment this line to download, for example, 2000 and 2009-2011
 # nhis.years.to.download <- c( 2011:2009 , 2000 )

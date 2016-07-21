@@ -37,7 +37,7 @@ download.documentation <- TRUE
 # use forward slashes instead of back slashes
 
 # uncomment this line by removing the `#` at the front..
-setwd( "./Dropbox/Mike/NHIS_CAM" )
+setwd( "~/Dropbox/Mike/NHIS_CAM" )
 # ..in order to set your current working directory
 
 
@@ -108,8 +108,8 @@ main.nhis.ftp <- "ftp://ftp.cdc.gov/pub/Health_Statistics/NCHS/Datasets/NHIS/"
 
 # load the download_cached and related functions
 # to prevent re-downloading of files once they've been downloaded.
-source_url( 
-	"https://raw.githubusercontent.com/ajdamico/asdfree/master/Download%20Cache/download%20cache.R" , 
+source( 
+	"/Volumes/Chings/asdfree/Download Cache/download cache.R" , 
 	prompt = FALSE , 
 	echo = FALSE 
 )
